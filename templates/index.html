@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stardust</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='/favicon/favicon-16x16.png') }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/topnav.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Javascript -->
+    {% block scripts %}
+    <script defer src="{{ url_for('static', filename='/js/text-slideshow.js') }}"></script>
+    {% endblock %}
+</head>
+<body onload="textSlideshowOnload()">
+    <div class="topnav">
+        <a href="../"><h1 title="Home" class="topnav-text">Stardust</h1></a>
+        <a href="./Education"><h2 title="Stardust For Education" class="topnav-text">Education</h2></a>
+        <a href="./Projects"><h2 title="All Projects" class="topnav-text">Projects</h2></a>
+        <a href="./Blog"><h2 title="Blog" class="topnav-text">Blog</h2></a>
+        <a href="./Contact"><h2 title="Contact Us" class="topnav-text">Contact</h2></a>
+        <a href="./Request"><h2 title="Request Something" class="topnav-text">Request</h2></a>
+        <a href="./Hire"><h2 title="Hire Us" class="topnav-text">Hire Us</h2></a>
+    </div>
+
+    <div class="block">
+        <h1 id="text-slideshow" class="header-text">All the tools you need</h1>
+        <div class="search">
+            <input type="text" title="Search Projects" placeholder="Search Projects" name="searchProjects">
+            <input type="submit" name="searchSubmit" title="Search!" placeholder="Search!" value="Search!" class="button">
+        </div>
+    </div>
+
+    <div class="block-inline" style="display:inline-block;">
+        <h1 class="header-text">Our Mission</h1>
+        <h3 class="subheader-text">
+            Our mission is to help you! <br>
+            Helping people is a good thing, and we like <br>
+            to let you choose what you need most to help <br>
+            you out. See <a href="/README" title="About Us" class="link">here</a> for more.
+        </h3>
+    </div>
+
+    <div class="education-block">
+        <h1 class="header-text">Education</h1>
+        <h3 class="subheader-text">
+            Education! One of the core parts of Stardust-Industries! Originally a <br>
+            request that would later lead to Stardust ind. Yes, our first project and <br>
+            also our biggest! We will continue to add ideas and features overtime! <br>
+            Want to see one in paticular? Join the discussion on <a href="https://www.github.com/Stardust-Industries/Education/Discussion" target="_blank" class="link" title="Github Discussion">github</a>!
+        </h3>
+    </div> 
+<!-- Footer -->
+<footer class="footer">
+    <p>Stardust-Industries, a organization created by Zach[ary] Richman <a class="link" target="_blank" href="https://www.github.com/NebulousCalm" title="Github Link">(NebulousCalm)</a> and Noah DePalma <a class="link" title="Github Link" target="_blank" href="https://ww.github.com/TacoSnack">(TackSnack)</a></p>
+</footer>
+</body>
+</html>

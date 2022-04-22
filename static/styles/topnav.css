@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+    
+.topnav{
+    background-color: #213140;
+    border: 1px solid #1C2833; 
+    transition: 0.5s;
+}
+
+.topnav:hover{
+    background-color: #1C2833;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.topnav-text{
+    display: inline-block;
+    position: relative;
+    color: #DECEBF;
+    margin-left: 30px;  
+}
+
+h1.topnav-text{
+    color: #316C7A;
+}
+  
+.topnav-text:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DECEBF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.topnav-text:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

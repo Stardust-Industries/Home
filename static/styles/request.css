@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+body{
+    font-family: 'Fredoka', 'sans-serif';
+    background-color: #EAF0EC;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    color: #276A96;
+    transition: 0.25s;
+    outline: none;
+}
+
+input:hover, input:focus{
+    border: 2px solid #276A96;
+    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+input.button{
+    cursor: pointer;
+}
+
+input.info{
+    resize: both;
+    overflow: auto;
+}

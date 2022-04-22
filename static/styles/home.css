@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+body{
+    font-family: 'Fredoka', 'sans-serif';
+    background-color: #EAF0EC;
+    overflow-x: hidden;
+}
+
+.block{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 65px 85px;
+    padding: 30px;
+    background-color: #c2dfdf;
+    border: 1px solid #1C2833;
+    border-radius: 20px; 
+    text-align: center;
+    transition: 0.25s;
+}
+
+.block:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border: 1px solid #C2DFDF
+}
+
+.block-inline{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 65px 85px;
+    padding: 30px;
+    background-color: #edc0ce;
+    border: 1px solid #1C2833;
+    border-radius: 20px; 
+    text-align: center;
+    transition: 0.25s;
+}
+
+.block-inline:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border: 1px solid #C2DFDF
+}
+
+.header-text{
+    font-size: 70px;
+    color: #2a3334;
+}
+
+.subheader-text{
+    font-family: 'Gideon Roman', cursive;
+    color: #99A3A4;
+}
+
+.education-block{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: 65px 85px; */
+    padding: 30px;
+    background-color: #fae9c3;
+    border: 1px solid #1C2833;
+    border-radius: 20px; 
+    text-align: center;
+    transition: 0.25s;
+}
+
+.education-block:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border: 1px solid #FAE9C3;
+}
+
+.link{
+    color: #1E90FF;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.link:hover{
+    color: #1e8fff81;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+input{
+    display: inline-block;
+    margin: 20px;
+    font-size: 25px;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+    color: #276A96;
+    transition: 0.25s;
+    outline: none;
+}
+
+input:hover, input:focus{
+    border: 2px solid #276A96;
+    box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+input.button{
+    border-radius: 7px;     
+    cursor: pointer;
+    color: #4d91be;
+}
+
+#text-slideshow{
+    background-color: #c2dfdf;
+    transition: background-color 2s ease-in;
+}
+
+.footer{
+    padding: 15px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #34495E;
+    color: #fff;
+    text-align: center;
+}
+
+/* Custom Highlight Colors */
+::-moz-selection{
+    color: #fff;
+    background-color: #11133B;
+}
+
+::selection{
+    color: #fff;
+    background-color: #11133B;
+}
